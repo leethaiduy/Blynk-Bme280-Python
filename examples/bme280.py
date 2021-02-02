@@ -168,9 +168,9 @@ def main(bus,blynk):
 
   temperature,pressure,humidity = readBME280All(bus)
   blynk.run()
-  print "Temperature : ", temperature, "C"
-  print "Pressure : ", pressure, "hPa"
-  print "Humidity : ", humidity, "%"
+  #print "Temperature : ", temperature, "C"
+  #print "Pressure : ", pressure, "hPa"
+  #print "Humidity : ", humidity, "%"
   blynk.virtual_write(0, temperature)
   blynk.virtual_write(1, pressure)
   blynk.virtual_write(2, humidity)
